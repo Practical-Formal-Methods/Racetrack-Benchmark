@@ -1,14 +1,14 @@
 # Racetrack Benchmark
-We created this repository to present benchmarks that are used to evaluate `Neuro-Aware Program Analysis` introduced in our CAV 2021 paper - "Automated Safety Verification of Programs Invoking Neural Networks". For a complete working environment and reproducing exact results in the paper please refer to [OTHERREPO](linktootherrepo).
+We created this repository to present benchmarks that are used to evaluate `Neuro-Aware Program Analysis` introduced in our CAV 2021 paper - "Automated Safety Verification of Programs Invoking Neural Networks". For a complete working environment and reproducing exact results in the paper please refer to [Neuro-Aware Program Analysis](https://github.com/Practical-Formal-Methods/clam-racetrack) repository.
 
 ## Project Structure
 
 ### Agents
 
-This folder contains neural networks trained to operate on various maps. A neural network takes the current state of the agent as an input and predicts the direction of acceleration towards the goal states. We use _Tensorflow_ framework for training. Naming scheme of the neural network models describe the map that the network trained on. In our paper, we present neural networks of various quality, however, here we provide only `GOOD` agents for inspection purposes. For all other agents, plesae refer to [OTHERREPO](linktootherrepo).
+This folder contains neural networks trained to operate on various maps. A neural network takes the current state of the agent as an input and predicts the direction of acceleration towards the goal states. We use _Tensorflow_ framework for training. Naming scheme of the neural network models describe the map that the network trained on. In our paper, we present neural networks of various quality, however, here we provide only `GOOD` agents for inspection purposes. For all other agents, plesae refer to [Neuro-Aware Program Analysis](https://github.com/Practical-Formal-Methods/clam-racetrack) repository.
 
 ### Source
-We present the `C` program used in evalaution in this folder. This program invokes a neural network to obtain predicted acceleration. Later, the accelaration is processed and the agent is moved over the map. Note that, the noise definitions in the paper are actualized in outside of these source files. Also, in the paper, we consider several parameters for `Lookahead` functionality, this program refer to `LA=3` variant. Noise implementations and other `Lookahead` variants can be seen in [OTHERREPO](linktootherrepo).
+We present the `C` program used in evalaution in this folder. This program invokes a neural network to obtain predicted acceleration. Later, the accelaration is processed and the agent is moved over the map. Note that, the noise definitions in the paper are actualized in outside of these source files. Also, in the paper, we consider several parameters for `Lookahead` functionality, this program refer to `LA=3` variant. Noise implementations and other `Lookahead` variants can be seen in [Neuro-Aware Program Analysis](https://github.com/Practical-Formal-Methods/clam-racetrack) repository.
 
 ### Include
 
